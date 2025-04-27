@@ -5,3 +5,7 @@ services:
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn app:app"
     plan: free
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    branch: main
+    autoDeploy: true
